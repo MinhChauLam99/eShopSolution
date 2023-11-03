@@ -1,9 +1,7 @@
-﻿using System;
+﻿using eShopSolution.Data.Enums;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using eShopSolution.Data.Enums;
 
 namespace eShopSolution.Data.Entities
 {
@@ -19,5 +17,9 @@ namespace eShopSolution.Data.Entities
         public OrderStatus Status { set; get; }
 
         public List<OrderDetail> OrderDetails { get; set; }
+
+        public AppUser AppUser { get; set; }
+
+
     }
 }
